@@ -1,0 +1,6 @@
+@ModaAyse.API_HostAddress = http://localhost:5017
+
+GET {{ModaAyse.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -10,7 +10,6 @@ namespace ModaAyse.Repository
 {
 	internal class AppDbContext: DbContext
 	{
-
 		public AppDbContext(DbContextOptions<AppDbContext> options):base(options)//db context option olarak benim db me bu özellikleri ver "kalıtımdb"
 		{
 				

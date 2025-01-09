@@ -6,8 +6,15 @@ using System.Threading.Tasks;
 
 namespace ModaAyse.Core.ModaAyseDataBase
 {
-	public class Yorumlar
+	public class Yorumlar:BaseEntity
 	{
-		public int MyProperty { get; set; }
+		public string Yorum { get; set; }
+		public int UstYorumId { get; set; }
+		public Urunler Urunler { get; set; }
+		public  Kullanicilar Kullanicilar { get; set; }
+
+
+		
+
 	}
 }

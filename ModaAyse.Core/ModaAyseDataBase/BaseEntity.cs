@@ -12,7 +12,7 @@ namespace ModaAyse.Core.ModaAyseDataBase
 		public bool AktifMi { get; set; }
 		public DateTime EklemeTarihi { get; set; }
 		public DateTime? GuncellemeTarihi { get; set; }
-		public int KulaniciId { get; set; }
-
+		
+		public int KullaniciId { get; set; }
 	}
 }

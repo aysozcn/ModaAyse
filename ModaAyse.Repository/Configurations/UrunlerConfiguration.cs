@@ -15,6 +15,14 @@ namespace ModaAyse.Repository.Configurations
 		{
 			builder.HasKey(k => k.Id);
 			builder.Property(k =>k.Id).UseIdentityColumn();
+			builder.Property(k=>k.UrunAdi).IsRequired().HasMaxLength(100);
+			builder.Property(k=>k.Aciklama).IsRequired(false);
+			builder.Property(k => k.UrunFiyat).IsRequired(true).HasColumnType("decimal(18,2)");
+			//urunler ile kategoriler arasında diyagram bağlantısı
+			builder.HasOne(k => k.Kategoriler).WithMany(k=>k.Urunler).HasForeignKey(k=>k.KategoriId); //hasone bir üründe bir kategoıri bire sonsuz ürünlerde sonsuz
+			//
+
+
 		}
 	}
 }

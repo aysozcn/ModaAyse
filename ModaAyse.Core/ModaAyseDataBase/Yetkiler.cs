@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace ModaAyse.Core.ModaAyseDataBase
 {
-	public class Yetkiler
+	public class Yetkiler:BaseEntity
 	{
 		[Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-		public int YerkilerID { get; set; }
-		[StringLength(200), Required]
+		
 		public string YerkiAdi{ get; set; }
-		public virtual List<Kullanicilar> KullaniciID { get; set; }	
+		public virtual List<Kullanicilar> KullaniciID { get; set; }
+		
 	}
 }

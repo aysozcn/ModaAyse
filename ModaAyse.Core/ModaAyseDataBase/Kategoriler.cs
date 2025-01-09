@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ModaAyse.Core.ModaAyseDataBase
 {
-	public class Kategoriler
+	public class Kategoriler:BaseEntity
 	{
+		public string KategoriAdi { get; set; }
+		public string Aciklama { get; set; }
+		public ICollection<Urunler> Urunler  { get; set; }
+		public ICollection<Menuler> Menuler { get; set; }
 	}
 }

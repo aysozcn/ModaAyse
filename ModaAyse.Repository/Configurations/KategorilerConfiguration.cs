@@ -18,7 +18,9 @@ namespace ModaAyse.Repository.Configurations
 			//builder.ToTable("Tbl_Kategoriler"); //Tablo adını db ye Tbl_Kategoriler isminde kayıt eder
 			builder.Property(k=>k.Id).UseIdentityColumn();
 			builder.Property(k=>k.Aciklama).IsRequired(false);
-			builder.Property(k => k.KategoriAdi).HasMaxLength(100);
+			builder.Property(k => k.KategoriAdi).IsRequired().HasMaxLength(100);
+
+
 
 
 

@@ -10,8 +10,10 @@ namespace ModaAyse.Core.ModaAyseDataBase
 	{
 		public string Yorum { get; set; }
 		public int UstYorumId { get; set; }
+		public int UrunId { get; set; }
 		public Urunler Urunler { get; set; }
 		public  Kullanicilar Kullanicilar { get; set; }
+		
 
 
 		

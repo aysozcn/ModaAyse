@@ -14,6 +14,6 @@ namespace ModaAyse.Core.ModaAyseDataBase
 		
 		public string YerkiAdi{ get; set; }
 		public virtual List<Kullanicilar> KullaniciID { get; set; }
-		
+		public Kullanicilar Kullanicilar { get; set; }
 	}
 }

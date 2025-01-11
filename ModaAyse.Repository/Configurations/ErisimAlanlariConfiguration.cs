@@ -17,7 +17,8 @@ namespace ModaAyse.Repository.Configurations
 			builder.Property(e => e.Id).UseIdentityColumn();
 			builder.Property(e => e.AktifMi).IsRequired();
 			builder.Property(e => e.Aciklama).IsRequired(false);
-			builder.HasOne(e => e.Kullanicilar).WithMany(e => e.ErisimAlanlari).HasForeignKey(e=> e.KullaniciId);
+			builder.HasOne(e => e.Menuler).WithOne(e => e.ErisimAlanlari).HasForeignKey<Menuler>(e => e.ErisimAlanlariId);
+
 
 			
 		}

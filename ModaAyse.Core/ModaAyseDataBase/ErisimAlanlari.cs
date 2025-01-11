@@ -16,6 +16,7 @@ namespace ModaAyse.Core.ModaAyseDataBase
 		public YetkiErisim YetkiErisim { get; set; }
 		public Yetkiler Yetkiler { get; set; }
 		public Musteriler Musteriler { get; set; }
+		public Menuler Menuler { get; set; }	
 
 	}
 }

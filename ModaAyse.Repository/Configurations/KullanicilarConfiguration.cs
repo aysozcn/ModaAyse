@@ -21,7 +21,7 @@ namespace ModaAyse.Repository.Configurations
 			builder.Property(k => k.KullaniciMail).IsRequired();
 			builder.Property(k => k.KullaniciSifre).IsRequired();
 			
-
+			builder.HasMany(k => k.Yorumlar).WithOne(k=>k.Kullanicilar).HasForeignKey(k=>k.KullaniciId);
 
 
 		}

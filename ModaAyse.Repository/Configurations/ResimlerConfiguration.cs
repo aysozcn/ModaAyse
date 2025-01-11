@@ -20,7 +20,7 @@ namespace ModaAyse.Repository.Configurations
 			builder.Property(r => r.GuncellemeTarihi).IsRequired();
 			builder.Property(r => r.ResimYolu).IsRequired(true);
 			builder.Property(r => r.ResimAciklamasi).IsRequired(true);
-			builder.Property(r => r.ResimSirasi).IsRequired(true);
+			builder.Property(r => r.ResimSirasi).IsRequired();
 			builder.HasOne(r => r.Urunler).WithMany(r => r.Resimler).HasForeignKey(r => r.UrunId);
 		}
 	}

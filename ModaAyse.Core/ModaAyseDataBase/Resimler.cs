@@ -9,7 +9,7 @@ namespace ModaAyse.Core.ModaAyseDataBase
 	public class Resimler:BaseEntity
 	{
 		public string ResimYolu{ get; set; }
-		public string ResimSirasi { get; set; }
+		public byte ResimSirasi { get; set; }
 		public string ResimAciklamasi { get; set; }
 		public DateTime ResimTarihi { get; set; }
 		public int UrunId { get; set; }

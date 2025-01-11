@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ModaAyse.Repository.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial_duzenleme : Migration
+    public partial class initial_duzenleme : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -41,6 +41,9 @@ namespace ModaAyse.Repository
 				//modelBuilder.ApplyConfiguration(new UrunlerConfiguration());
 				//modelBuilder.ApplyConfiguration(new KategorilerConfiguration());
 				modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly()); //kalıtım olarak verdiğim class üzerinde exeqution yapıyor! yukarıda tek tek tanımladığım yerleri (artık bütün configuration olaylarını) buraya dahil ediliyor. bu nedenle bir bir tanımlamadım!!.
+				modelBuilder.ApplyConfiguration(new UrunlerConfiguration());
+				modelBuilder.ApplyConfiguration(new KategorilerConfiguration());
+				
 
 
 				base.OnModelCreating(modelBuilder);

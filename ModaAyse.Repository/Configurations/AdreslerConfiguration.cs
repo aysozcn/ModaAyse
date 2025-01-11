@@ -13,7 +13,7 @@ namespace ModaAyse.Repository.Configurations
 	{
 		public void Configure(EntityTypeBuilder<Adresler> builder)
 		{
-			builder.Property(a => a.Id);
+			builder.HasKey(a => a.Id);
 			builder.Property(a => a.Id).UseIdentityColumn();
 			builder.Property(a => a.AdresBasligi).IsRequired();
 			builder.Property(a => a.Adres).IsRequired().HasMaxLength(100);
